@@ -1,0 +1,998 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 25,
+  "links": [],
+  "panels": [
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 17,
+      "options": {
+        "code": {
+          "language": "html",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"text-align: center;\">\r\n    <h1><strong>KØLESKABE</strong></h1>\r\n \r\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 18,
+      "options": {
+        "code": {
+          "language": "html",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"text-align: center;\">\r\n    <h1><strong>FRYSERE</strong></h1>\r\n \r\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "PD299C0FEB26B6F10"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 4,
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "showValues": false,
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 3
+              },
+              {
+                "color": "green",
+                "value": 4.9
+              },
+              {
+                "color": "red",
+                "value": 5
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 22 - EM320-5322 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Fryser 1"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 28 - EM320-5344 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Køleskab 1"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 33 - EM320-5764 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Fryser 2"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 51 - EM320-5829 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Køleskab 3"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 64 - EM320-5912 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Køleskab 2"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 65 - EM320-5941 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Fryser 3"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 0,
+        "y": 2
+      },
+      "id": 15,
+      "options": {
+        "legend": {
+          "calcs": [
+            "min",
+            "mean",
+            "max"
+          ],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "asc"
+        }
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "code",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT\r\n  time_index AS \"time\",\r\n  CONCAT(floor, ' - ', room, ' - ', appliance) AS Metric,\r\n  temperature\r\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\r\nWHERE\r\n  $__timeFilter(time_index) \r\n  AND department IN ('$department') \r\n  AND name IN ($sensorID)\r\n  AND (\r\n    LOWER(appliance) LIKE '%køl%' \r\n    OR LOWER(appliance) LIKE '%frugt%' \r\n    OR LOWER(appliance) LIKE '%grønt%'\r\n  )  -- Filter to include \"køl\", \"frugt\", and \"grønt\"\r\nORDER BY 1, 2;\r\n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        },
+        {
+          "dataset": "quantumleap",
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "builder",
+          "format": "table",
+          "hide": false,
+          "rawSql": "",
+          "refId": "B"
+        }
+      ],
+      "title": "Graf (Køleskabe)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "PD299C0FEB26B6F10"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 4,
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "showValues": false,
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": -21
+              },
+              {
+                "color": "green",
+                "value": -18.1
+              },
+              {
+                "color": "red",
+                "value": -18
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 22 - EM320-5322 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Fryser 1"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 28 - EM320-5344 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Køleskab 1"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 33 - EM320-5764 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Fryser 2"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 51 - EM320-5829 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Køleskab 3"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 64 - EM320-5912 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Køleskab 2"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Sensor 65 - EM320-5941 - Boernesymfonien"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Fryser 3"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 12,
+        "y": 2
+      },
+      "id": 4,
+      "options": {
+        "legend": {
+          "calcs": [
+            "min",
+            "mean",
+            "max"
+          ],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "timezone": [
+          "Europe/Copenhagen"
+        ],
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "asc"
+        }
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "code",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT\r\n  time_index AS \"time\",\r\n  CONCAT(floor, ' - ', room, ' - ', appliance) AS Metric,\r\n  temperature\r\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\r\nWHERE\r\n  $__timeFilter(time_index) AND department IN ('$department') \r\n  AND name IN ($sensorID) \r\n  AND LOWER(appliance) LIKE '%frys%'\r\n  AND time_index BETWEEN $__timeFrom()::timestamp AND $__timeTo()::timestamp\r\nORDER BY 1, 2;\r\n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Graf (Frysere)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "PD299C0FEB26B6F10"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 3
+              },
+              {
+                "color": "green",
+                "value": 5
+              },
+              {
+                "color": "red",
+                "value": 5.1
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 0,
+        "y": 14
+      },
+      "id": 14,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^value$/",
+          "values": true
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "WITH latest_per_entity AS (\r\n  SELECT DISTINCT ON (entity_id)\r\n    entity_id,\r\n    floor, room, appliance,\r\n    temperature,\r\n    time_index\r\n  FROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\r\n  WHERE\r\n    $__timeFilter(time_index)\r\n    AND department IN ('$department')\r\n    AND name IN ($sensorID)\r\n    AND (\r\n      lower(appliance) LIKE '%køl%' OR lower(appliance) LIKE '%koel%' OR lower(appliance) LIKE '%kol%'\r\n      OR lower(appliance) LIKE '%frugt%'\r\n      OR lower(appliance) LIKE '%grønt%' OR lower(appliance) LIKE '%groent%'\r\n    )\r\n  ORDER BY\r\n    entity_id,\r\n    time_index DESC                 -- newest row per entity_id\r\n),\r\nlatest_entity_per_location AS (\r\n  SELECT DISTINCT ON (floor, room, appliance)\r\n    entity_id,\r\n    floor, room, appliance,\r\n    temperature,\r\n    time_index\r\n  FROM latest_per_entity\r\n  ORDER BY\r\n    floor, room, appliance,\r\n    time_index DESC                 -- newest entity (by last seen time) for that combo\r\n)\r\nSELECT\r\n  CONCAT(floor, ' - ', room, ' - ', appliance) AS \"sammenkædning\",\r\n  ROUND(temperature::numeric, 1)               AS value\r\nFROM latest_entity_per_location\r\nORDER BY \"sammenkædning\";\r\n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Seneste temperaturmåling(køleskabe)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "PD299C0FEB26B6F10"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": -21
+              },
+              {
+                "color": "green",
+                "value": -18.1
+              },
+              {
+                "color": "red",
+                "value": -18
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 12,
+        "y": 14
+      },
+      "id": 6,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^value$/",
+          "values": true
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "WITH latest_per_entity AS (\r\n  SELECT DISTINCT ON (entity_id)\r\n    entity_id,\r\n    floor, room, appliance,\r\n    temperature,\r\n    time_index\r\n  FROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\r\n  WHERE\r\n    $__timeFilter(time_index)\r\n    AND department IN ('$department')\r\n    AND name IN ($sensorID)\r\n    AND LOWER(appliance) LIKE '%fry%'   -- only freezers\r\n  ORDER BY\r\n    entity_id,\r\n    time_index DESC                     -- newest row per entity_id\r\n),\r\nlatest_entity_per_location AS (\r\n  SELECT DISTINCT ON (floor, room, appliance)\r\n    entity_id,\r\n    floor, room, appliance,\r\n    temperature,\r\n    time_index\r\n  FROM latest_per_entity\r\n  ORDER BY\r\n    floor, room, appliance,\r\n    time_index DESC                     -- newest entity (by last seen time) for that combo\r\n)\r\nSELECT\r\n  CONCAT(floor, ' - ', room, ' - ', appliance) AS \"Værdi\",\r\n  ROUND(temperature::numeric, 1)               AS value\r\nFROM latest_entity_per_location\r\nORDER BY \"Værdi\";",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Seneste temperaturmåling(frysere)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "PD299C0FEB26B6F10"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 2.9
+              },
+              {
+                "color": "green",
+                "value": 5
+              },
+              {
+                "color": "red",
+                "value": 5.1
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 0,
+        "y": 18
+      },
+      "id": 13,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^value$/",
+          "values": true
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT\r\n  CONCAT(floor, ' - ', room, ' - ', appliance) AS metric,\r\n  AVG(temperature) AS value\r\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\r\nWHERE\r\n  department IN ('$department') \r\n  AND name IN ($sensorID)\r\n  AND DATE_PART('week', time_index) = CAST(SPLIT_PART('$Uge', '-', 2) AS INTEGER) -- Extract the week number\r\n  AND DATE_PART('year', time_index) = CAST(SPLIT_PART('$Uge', '-', 1) AS INTEGER) -- Filter by year\r\n  AND appliance IS NOT NULL -- Exclude appliances that are NULL\r\n  AND (\r\n    LOWER(appliance) LIKE '%køl%' \r\n    OR LOWER(appliance) LIKE '%frugt%' \r\n    OR LOWER(appliance) LIKE '%grønt%'\r\n  ) -- Include \"køl\", \"frugt\", and \"grønt\"\r\nGROUP BY metric\r\nORDER BY 1, 2;\r\n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Gennemsnitlige køleskabstemperaturmåling for den valgte uge",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "PD299C0FEB26B6F10"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": -21
+              },
+              {
+                "color": "green",
+                "value": -18.1
+              },
+              {
+                "color": "red",
+                "value": -18
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 12,
+        "y": 18
+      },
+      "id": 16,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^value$/",
+          "values": true
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "PD299C0FEB26B6F10"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT \r\n  CONCAT(floor, ' - ', room, ' - ', appliance) AS \"Værdi\",\r\n  AVG(temperature) AS value \r\nFROM \r\n  \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\r\nWHERE \r\n  name IN ($sensorID)\r\n  AND DATE_PART('week', time_index) = CAST(SPLIT_PART('$Uge', '-', 2) AS INTEGER) -- Extract the week number\r\n  AND DATE_PART('year', time_index) = CAST(SPLIT_PART('$Uge', '-', 1) AS INTEGER) -- Filter by year\r\n  AND appliance IS NOT NULL -- Exclude appliances that are NULL\r\n  AND LOWER(appliance) LIKE '%fry%' -- Filter for refrigerators\r\n  AND time_index BETWEEN $__timeFrom()::timestamp AND $__timeTo()::timestamp\r\nGROUP BY \r\n  floor, room, appliance -- Group by all columns used in CONCAT\r\nORDER BY \r\n  floor, room, appliance;\r\n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Gennemsnitlige frysertemperaturmåling for den valgte uge",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 22
+      },
+      "id": 20,
+      "panels": [],
+      "title": "Gennemsnitlig uge temperatur",
+      "type": "row"
+    },
+    {
+      "gridPos": {
+        "h": 5,
+        "w": 24,
+        "x": 0,
+        "y": 23
+      },
+      "id": 21,
+      "libraryPanel": {
+        "name": "Gennemsnitlig uge temperaturer",
+        "uid": "ceurd6z9wirk0e"
+      },
+      "title": "",
+      "type": "library-panel-ref"
+    }
+  ],
+  "preload": false,
+  "refresh": "",
+  "schemaVersion": 42,
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "text": "Børnesymfonien",
+          "value": "Børnesymfonien"
+        },
+        "datasource": {
+          "type": "postgres",
+          "uid": "PD299C0FEB26B6F10"
+        },
+        "definition": "SELECT DISTINCT department \nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\nWHERE department != 'Jesper Torvekøkken'\nORDER BY department;\n",
+        "includeAll": false,
+        "label": "Afdeling",
+        "name": "department",
+        "options": [],
+        "query": "SELECT DISTINCT department \nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\nWHERE department != 'Jesper Torvekøkken'\nORDER BY department;\n",
+        "refresh": 1,
+        "regex": "",
+        "type": "query"
+      },
+      {
+        "current": {
+          "text": [
+            "All"
+          ],
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": {
+          "type": "grafana-postgresql-datasource",
+          "uid": "PD299C0FEB26B6F10"
+        },
+        "definition": "SELECT \nname AS \"__value\", \nappliance || ' (' || \n  CASE \n    WHEN floor IS NULL THEN room || ', Etage ukendt'\n    WHEN room = floor THEN room\n    ELSE floor || ', ' || room\n  END || ')' AS \"__text\"\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\nWHERE department = '$department'\nORDER BY appliance, floor, room;\n",
+        "includeAll": true,
+        "label": "Vælg køle/fryseskab(e)",
+        "multi": true,
+        "name": "sensorID",
+        "options": [],
+        "query": "SELECT \nname AS \"__value\", \nappliance || ' (' || \n  CASE \n    WHEN floor IS NULL THEN room || ', Etage ukendt'\n    WHEN room = floor THEN room\n    ELSE floor || ', ' || room\n  END || ')' AS \"__text\"\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\nWHERE department = '$department'\nORDER BY appliance, floor, room;\n",
+        "refresh": 1,
+        "regex": "",
+        "type": "query"
+      },
+      {
+        "current": {
+          "text": "2026-25",
+          "value": "2026-25"
+        },
+        "datasource": {
+          "type": "postgres",
+          "uid": "PD299C0FEB26B6F10"
+        },
+        "definition": "SELECT DISTINCT \n    CONCAT(DATE_PART('year', time_index), '-', LPAD(DATE_PART('week', time_index)::TEXT, 2, '0')) AS week\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\nWHERE $__timeFilter(time_index)\n  AND time_index IS NOT NULL\nORDER BY week;\n",
+        "includeAll": false,
+        "name": "Uge",
+        "options": [],
+        "query": "SELECT DISTINCT \n    CONCAT(DATE_PART('year', time_index), '-', LPAD(DATE_PART('week', time_index)::TEXT, 2, '0')) AS week\nFROM \"mtaarhus-kommune\".\"etrefrigerator-sensor\"\nWHERE $__timeFilter(time_index)\n  AND time_index IS NOT NULL\nORDER BY week;\n",
+        "refresh": 2,
+        "regex": "",
+        "sort": 4,
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-2d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Automatisk Egenkontrol - AAK",
+  "uid": "be3mn76q1a800f",
+  "version": 13,
+  "weekStart": "monday"
+}
