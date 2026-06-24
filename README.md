@@ -25,7 +25,8 @@ Kommuner, driftspersonale, IoT-medarbejdere og andre offentlige organisationer m
 
 ## Relaterede links
 
-- GovTech Midtjylland: https://govtechmidtjylland.dk
+1. [GovTech Midtjylland website](https://govtechmidtjylland.dk)
+    1. [Casebeskrivelse](https://govtechmidtjylland.dk/cases/automatiseret-egenkontrol-paa-temperatur-i-koeleskabe-og-frysere)
 
 ---
 
